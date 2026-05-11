@@ -14,12 +14,9 @@ export default function Characters({ navigate }: { navigate: (v: ViewState) => v
       <BackButton navigate={navigate} />
       
       <div className="max-w-7xl mx-auto pt-16">
-        <SectionHeader 
-          title="사교계의 인물들" 
-          subtitle="스캔들의 중심이자 가장 매혹적인 주역들"
-        />
+        <SectionHeader logoSrc="■사교계로고" alt="사교계의 인물들" />
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-16 mt-8">
           {characterData.map((char, index) => (
             <motion.div
               key={char.id}
@@ -29,19 +26,23 @@ export default function Characters({ navigate }: { navigate: (v: ViewState) => v
               transition={{ duration: 0.6, delay: (index % 4) * 0.1 }}
               whileHover={{ y: -10 }}
               onClick={() => setSelectedChar(char)}
-              className="cursor-pointer group flex flex-col items-center"
+              className="cursor-pointer group flex flex-col items-center relative"
             >
-              <div className="w-full aspect-[3/4] p-2 bg-white/70 shadow-elegant border border-accent-gold/20 rounded-sm mb-4 relative overflow-hidden">
-                 <div className="absolute inset-0 border-[3px] border-double border-accent-gold/40 m-2 z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                 <img 
-                   src={char.mainImage} 
-                   alt={char.name} 
-                   className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
-                   loading="lazy"
-                 />
+              <div className="w-full aspect-[3/4] p-2 bg-white/70 shadow-elegant border border-accent-gold/20 rounded-sm mb-4 relative">
+                 <div className="w-full h-full relative overflow-hidden">
+                   <div className="absolute inset-0 border-[3px] border-double border-accent-gold/40 m-2 z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                   <img 
+                     src={char.mainImage} 
+                     alt={char.name} 
+                     className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                     loading="lazy"
+                   />
+                 </div>
+                 {/* 겹치는 푯말 이미지 */}
+                 <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-[85%] z-20 drop-shadow-[0_4px_8px_rgba(0,0,0,0.15)] transition-transform duration-300 group-hover:scale-105">
+                   <img src={char.signpost} alt="가문 푯말" className="w-full h-auto object-contain" />
+                 </div>
               </div>
-              <h3 className="font-serif text-xl mb-1">{char.name}</h3>
-              <p className="font-body text-sm text-text-light/70">{char.family}</p>
             </motion.div>
           ))}
         </div>

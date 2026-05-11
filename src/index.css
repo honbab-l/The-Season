@@ -10,9 +10,9 @@
   --color-pastel-blue: #C3D2DF; /* Soft dusty blue */
   --color-pastel-pink: #EBD4D4; /* Soft dusty pink */
   
-  --font-display: "Cinzel Decorative", "Playfair Display", serif;
-  --font-serif: "Playfair Display", "Nanum Myeongjo", serif;
-  --font-body: "Lora", "Nanum Myeongjo", serif;
+  --font-display: "Cormorant Garamond", "Noto Serif KR", serif;
+  --font-serif: "Cormorant Garamond", "Noto Serif KR", serif;
+  --font-body: "Cormorant Garamond", "Noto Serif KR", serif;
 
   --shadow-elegant: 0 10px 30px -10px rgba(138, 115, 87, 0.2), 0 4px 10px -4px rgba(138, 115, 87, 0.1);
   --shadow-elegant-hover: 0 20px 40px -15px rgba(138, 115, 87, 0.3), 0 8px 15px -6px rgba(138, 115, 87, 0.15);
@@ -23,10 +23,7 @@
   body {
     @apply font-body text-text-main antialiased overflow-x-hidden;
     background-color: var(--color-primary-base);
-    background: radial-gradient(circle at 50% 0%, var(--color-primary-base) 0%, var(--color-primary-dark) 100%);
-    /* ■배경이미지 : 여기에 반복할 배경 이미지 URL을 넣으세요. 예: url('https://example.com/pattern.png') */
-    /* background-image 속성을 켜면 위의 radial-gradient 대신 패턴이 반복됩니다. */
-    /* background-image: url('반복할패턴URL'); */
+    background-image: url("https://i.postimg.cc/JnQWgD2p/loop.jpg");
     background-repeat: repeat;
     background-size: 400px;
     min-height: 100vh;

@@ -13,14 +13,13 @@ export function BackButton({ navigate }: { navigate: (v: ViewState) => void }) {
   );
 }
 
-export function SectionHeader({ title, subtitle }: { title: string, subtitle?: string }) {
+export function SectionHeader({ logoSrc, alt }: { logoSrc: string, alt?: string }) {
   return (
     <div className="flex flex-col items-center mt-12 mb-16 text-center">
-      <h2 className="text-4xl md:text-5xl font-display">{title}</h2>
+      <img src={logoSrc} alt={alt || "섹션 로고"} className="h-20 md:h-28 object-contain mb-4" />
       <div className="regency-title-ornament">
          <span className="text-accent-gold">✦</span>
       </div>
-      {subtitle && <p className="max-w-2xl text-lg font-serif italic text-text-light">{subtitle}</p>}
     </div>
   )
 }
