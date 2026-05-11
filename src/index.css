@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-base: #F9F6F0; /* Cream background */
+  --color-primary-dark: #EAE3D5; /* Darker cream */
+  --color-accent-gold: #C5A880; /* Muted gold */
+  --color-accent-gold-dark: #A6865A;
+  --color-text-main: #3A312B; /* Deep warm brown text */
+  --color-text-light: #6A5D54;
+  --color-pastel-blue: #C3D2DF; /* Soft dusty blue */
+  --color-pastel-pink: #EBD4D4; /* Soft dusty pink */
+  
+  --font-display: "Cinzel Decorative", "Playfair Display", serif;
+  --font-serif: "Playfair Display", "Nanum Myeongjo", serif;
+  --font-body: "Lora", "Nanum Myeongjo", serif;
+
+  --shadow-elegant: 0 10px 30px -10px rgba(138, 115, 87, 0.2), 0 4px 10px -4px rgba(138, 115, 87, 0.1);
+  --shadow-elegant-hover: 0 20px 40px -15px rgba(138, 115, 87, 0.3), 0 8px 15px -6px rgba(138, 115, 87, 0.15);
+  --shadow-glow: 0 0 15px rgba(197, 168, 128, 0.4);
+}
+
+@layer base {
+  body {
+    @apply font-body text-text-main antialiased overflow-x-hidden;
+    background-color: var(--color-primary-base);
+    background: radial-gradient(circle at 50% 0%, var(--color-primary-base) 0%, var(--color-primary-dark) 100%);
+    /* ■배경이미지 : 여기에 반복할 배경 이미지 URL을 넣으세요. 예: url('https://example.com/pattern.png') */
+    /* background-image 속성을 켜면 위의 radial-gradient 대신 패턴이 반복됩니다. */
+    /* background-image: url('반복할패턴URL'); */
+    background-repeat: repeat;
+    background-size: 400px;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .regency-frame {
+    @apply relative border-double border-[6px] border-accent-gold/40 bg-white/80 backdrop-blur-sm shadow-elegant rounded-xl p-8;
+  }
+  
+  .regency-frame-hover {
+    @apply transition-all duration-500 ease-out hover:shadow-elegant-hover hover:-translate-y-1 hover:border-accent-gold/70;
+  }
+
+  .regency-button {
+    @apply relative px-8 py-4 font-serif text-lg tracking-widest uppercase text-text-main transition-all duration-300 ease-in-out border border-accent-gold/50 rounded-full bg-white/60 hover:bg-white hover:shadow-glow hover:-translate-y-0.5 overflow-hidden;
+  }
+  
+  .regency-title-ornament {
+    @apply flex items-center justify-center gap-4 py-8;
+  }
+  
+  .regency-title-ornament::before,
+  .regency-title-ornament::after {
+    content: '';
+    @apply block h-px w-24 bg-gradient-to-r from-transparent via-accent-gold to-transparent;
+  }
+  
+  .glass-panel {
+    @apply bg-white/60 backdrop-blur-md border border-white/40 shadow-elegant;
+  }
+
+  /* Custom scrollbar for an elegant feel */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-accent-gold);
+    border-radius: 20px;
+    opacity: 0.5;
+  }
+}
+
+/* Utilities for fancy shapes if needed */
+.ornate-corners {
+  /* A simple way to mimic ornate corners with CSS borders */
+  position: relative;
+}
+.ornate-corners::before,
+.ornate-corners::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-accent-gold);
+  pointer-events: none;
+}
+.ornate-corners::before {
+  top: -6px; left: -6px;
+  border-right: none; border-bottom: none;
+}
+.ornate-corners::after {
+  bottom: -6px; right: -6px;
+  border-left: none; border-top: none;
+}
