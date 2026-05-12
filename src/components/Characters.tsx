@@ -14,7 +14,7 @@ export default function Characters({ navigate }: { navigate: (v: ViewState) => v
       <BackButton navigate={navigate} />
       
       <div className="max-w-7xl mx-auto pt-16">
-        <SectionHeader logoSrc="■사교계로고" alt="사교계의 인물들" />
+        <SectionHeader logoSrc="https://i.postimg.cc/dQTjNTtR/main.png" alt="사교계의 인물들" />
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-16 mt-8">
           {characterData.map((char, index) => (

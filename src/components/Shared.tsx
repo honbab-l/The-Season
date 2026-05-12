@@ -16,7 +16,7 @@ export function BackButton({ navigate }: { navigate: (v: ViewState) => void }) {
 export function SectionHeader({ logoSrc, alt }: { logoSrc: string, alt?: string }) {
   return (
     <div className="flex flex-col items-center mt-12 mb-16 text-center">
-      <img src={logoSrc} alt={alt || "섹션 로고"} className="h-20 md:h-28 object-contain mb-4" />
+      <img src={logoSrc} alt={alt || "섹션 로고"} className="h-32 md:h-48 lg:h-56 w-auto max-w-[90%] object-contain mb-4 drop-shadow-sm" />
       <div className="regency-title-ornament">
          <span className="text-accent-gold">✦</span>
       </div>

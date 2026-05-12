@@ -14,7 +14,7 @@ export default function Geography({ navigate }: { navigate: (v: ViewState) => vo
       <BackButton navigate={navigate} />
       
       <div className="max-w-6xl mx-auto pt-16">
-        <SectionHeader logoSrc="■지도로고" alt="로맨스 지도" />
+        <SectionHeader logoSrc="https://i.postimg.cc/dQTjNTtR/main.png" alt="로맨스 지도" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 pl-4 pr-4">
           {geographyData.map((loc, index) => (

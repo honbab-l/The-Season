@@ -5,7 +5,7 @@ export default function MainMenu({ navigate }: { navigate: (view: ViewState) => 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-8 overflow-y-auto">
       <div className="w-full max-w-3xl text-center regency-frame">
-        <img src="■메인로고" alt="연대기의 서막 로고" className="h-24 md:h-32 object-contain mx-auto mb-2" />
+        <img src="https://i.postimg.cc/DwmZ51np/lt.png" alt="연대기의 서막 로고" className="h-32 md:h-48 lg:h-56 w-auto max-w-[90%] object-contain mx-auto mb-2 drop-shadow-sm" />
         <div className="regency-title-ornament">
           <span className="text-accent-gold">✧</span>
         </div>

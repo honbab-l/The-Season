@@ -9,7 +9,7 @@ export default function Worldview({ navigate }: { navigate: (v: ViewState) => vo
       <BackButton navigate={navigate} />
       
       <div className="max-w-4xl mx-auto pt-16">
-        <SectionHeader logoSrc="■법칙로고" alt="사교계의 법칙" />
+        <SectionHeader logoSrc="https://i.postimg.cc/dQTjNTtR/main.png" alt="사교계의 법칙" />
         
         <div className="flex flex-col gap-12">
           {loreData.map((lore, index) => (
