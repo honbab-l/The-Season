@@ -24,10 +24,12 @@ export default function Families({ navigate }: { navigate: (view: ViewState) => 
               </div>
               <h3 className="font-display text-2xl text-accent-gold-dark mb-2">{family.name}</h3>
               <div className="flex flex-col items-center w-full mb-6">
-                 <div className="w-16 h-px bg-accent-gold/50 mb-3"></div>
-                 <p className="font-serif text-sm text-text-light italic">
-                   {family.members.join(', ')}
-                 </p>
+                 <div className="w-16 h-px bg-accent-gold/50 mb-4"></div>
+                 <div className="font-serif text-xs text-accent-gold-dark italic h-[85px] flex flex-col gap-1.5 justify-start items-center">
+                   {family.members.map((member, index) => (
+                     <span key={index}>{member}</span>
+                   ))}
+                 </div>
               </div>
               <p className="font-body text-sm leading-relaxed text-text-main/80 text-justify">
                 {family.description}
