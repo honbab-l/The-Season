@@ -16,10 +16,13 @@ export default function MainMenu({ navigate }: { navigate: (view: ViewState) => 
           명예를 둘러싼 귀족들의 섬세한 이야기를 만나보세요.
         </p>
 
-        <div className="flex flex-col gap-6 w-64 mx-auto">
-          <MenuButton onClick={() => navigate('worldview')} text="세계관 안내" />
-          <MenuButton onClick={() => navigate('characters')} text="인물 사전" />
-          <MenuButton onClick={() => navigate('geography')} text="주요 명소" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-lg mx-auto">
+          <MenuButton onClick={() => navigate('worldview')} text="세계관 설명서" />
+          <MenuButton onClick={() => navigate('geography')} text="지도" />
+          <MenuButton onClick={() => navigate('families')} text="가문들" />
+          <MenuButton onClick={() => navigate('characters')} text="주요 인물들" />
+          <MenuButton onClick={() => navigate('social-clubs')} text="사교계" />
+          <MenuButton onClick={() => navigate('gossip')} text="위스퍼러" />
         </div>
       </div>
     </div>

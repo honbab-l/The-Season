@@ -278,3 +278,29 @@ export const geographyData = [
     image: "■링크이미지"
   }
 ];
+
+export const familiesData = Array.from({ length: 10 }, (_, i) => ({
+  id: i + 1,
+  name: `■가문이름${i + 1}`,
+  logo: `■가문로고${i + 1}`,
+  members: ["■가문 구성원 1", "■가문 구성원 2"],
+  description: `■가문${i + 1}설명 (약 200자 분량의 가문 설명이 여기에 들어갑니다. 이 가문이 사교계에서 차지하는 위상, 가문의 주요 사업이나 부의 원천, 그리고 사람들 사이에서 오르내리는 평판 등을 자유롭게 작성해주세요. 가문 특유의 분위기나 전통을 설명해주시면 더욱 서사가 풍부해집니다.)`
+}));
+
+export const socialClubsData = Array.from({ length: 6 }, (_, i) => ({
+  id: i + 1,
+  name: `■사교클럽이름${i + 1}`,
+  logo: `■사교클럽로고${i + 1}`,
+  description: `■클럽${i + 1}설명 (약 100자 분량의 설명이 들어갑니다. 어떤 사람들이 주로 모이는지, 회원 자격은 어떻게 되는지, 클럽에서 주로 이루어지는 활동이나 은밀한 소문 등에 대해 적어주세요.)`
+}));
+
+export const gossipData = Array.from({ length: 20 }, (_, i) => ({
+  id: i + 1,
+  image: `■가십${i + 1}번`,
+  // 겹치지 않게 지그재그(왼쪽/오른쪽)로 배치하며 세로로 일정하게 분포시킵니다.
+  rotation: (Math.sin(i * 31) * 20), // -20 ~ 20도 방향
+  left: i % 2 === 0 
+    ? 15 + (Math.abs(Math.sin(i * 13)) * 30)  // 짝수 번째는 왼쪽 영역 (15% ~ 45%)
+    : 55 + (Math.abs(Math.sin(i * 13)) * 30), // 홀수 번째는 오른쪽 영역 (55% ~ 85%)
+  top: 3 + (i * 4.7) + (Math.cos(i * 7) * 1.5), // 세로로 3%에서 95%까지 고르게 분산하며 약간의 불규칙성 추가
+}));

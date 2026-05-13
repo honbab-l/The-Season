@@ -5,8 +5,11 @@ import MainMenu from './components/MainMenu';
 import Worldview from './components/Worldview';
 import Characters from './components/Characters';
 import Geography from './components/Geography';
+import Families from './components/Families';
+import SocialClubs from './components/SocialClubs';
+import Gossip from './components/Gossip';
 
-export type ViewState = 'start' | 'main' | 'worldview' | 'characters' | 'geography';
+export type ViewState = 'start' | 'main' | 'worldview' | 'characters' | 'geography' | 'families' | 'social-clubs' | 'gossip';
 
 function PageWrapper({ children, viewKey }: { children: ReactNode, viewKey: string }) {
   return (
@@ -57,6 +60,21 @@ export default function App() {
           {currentView === 'geography' && (
              <PageWrapper viewKey="geography">
                <Geography navigate={setCurrentView} />
+             </PageWrapper>
+          )}
+          {currentView === 'families' && (
+             <PageWrapper viewKey="families">
+               <Families navigate={setCurrentView} />
+             </PageWrapper>
+          )}
+          {currentView === 'social-clubs' && (
+             <PageWrapper viewKey="social-clubs">
+               <SocialClubs navigate={setCurrentView} />
+             </PageWrapper>
+          )}
+          {currentView === 'gossip' && (
+             <PageWrapper viewKey="gossip">
+               <Gossip navigate={setCurrentView} />
              </PageWrapper>
           )}
         </AnimatePresence>
