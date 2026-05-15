@@ -28,9 +28,8 @@ export default function SocialClubs({ navigate }: { navigate: (view: ViewState) 
               </div>
               <div className="w-full flex-1 flex flex-col justify-center">
                 <h3 className="font-display text-2xl text-accent-gold-dark mb-4 text-center md:text-left">{club.name}</h3>
-                <div className="relative pl-6">
-                  <span className="absolute left-0 -top-1 text-3xl text-accent-gold/40 font-serif leading-none">“</span>
-                  <p className="font-body text-sm leading-relaxed text-text-main/80 text-justify md:text-left">
+                <div className="relative">
+                  <p className="font-body text-base leading-relaxed text-text-main/80 text-justify md:text-left break-keep">
                     {club.description}
                   </p>
                 </div>
