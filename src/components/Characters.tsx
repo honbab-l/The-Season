@@ -112,10 +112,10 @@ function CharacterModal({ char, onClose }: { char: CharacterInfo, onClose: () =>
             <div className="h-px bg-gradient-to-r from-accent-gold-dark to-transparent w-full mb-8"></div>
             
             <p className="text-xl font-serif text-text-light mb-6 italic border-l-4 border-accent-gold-dark/40 pl-4">
-              "{char.shortDesc}"
+              {char.shortDesc}
             </p>
             
-            <p className="font-body text-lg leading-loose text-text-main">
+            <p className="font-body text-lg leading-loose text-text-main whitespace-pre-line">
               {char.description}
             </p>
             
