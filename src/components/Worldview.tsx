@@ -25,9 +25,23 @@ export default function Worldview({ navigate }: { navigate: (v: ViewState) => vo
                 <span className="font-display text-2xl text-accent-gold-dark italic">{(index + 1).toString().padStart(2, '0')}</span>
               </div>
               <h3 className="text-2xl font-serif text-center mb-6 text-text-main group-hover:text-accent-gold-dark transition-colors">{lore.title}</h3>
-              <p className="text-lg leading-relaxed text-text-light font-body text-center font-medium opacity-90 indent-4">
-                {lore.description}
-              </p>
+              {lore.description && (
+                <p className="text-base sm:text-lg leading-relaxed text-text-light font-body text-justify font-medium opacity-90 indent-4 mb-4">
+                  {lore.description}
+                </p>
+              )}
+              {lore.items && lore.items.length > 0 && (
+                <div className="flex flex-col gap-4 mt-4">
+                  {lore.items.map((item, idx) => (
+                    <div key={idx} className="flex flex-col sm:flex-row gap-2">
+                      <div className="font-serif font-bold text-accent-gold-dark min-w-max whitespace-nowrap">￭ {item.label}</div>
+                      <p className="text-base leading-relaxed text-text-light font-body text-justify opacity-90">
+                        {item.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
