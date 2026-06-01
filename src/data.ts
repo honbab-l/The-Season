@@ -47,7 +47,7 @@ export const characterData = [
     name: "애셔 셰일포드",
     family: "셰일포드 공작가 가주, 셰일포드 공작",
     shortDesc: "29세, 남성",
-    description: "리딩턴 클럽을 주도하는 셰일포드 공작가의 수장, 애셔 셰일포드입니다. 압도적인 체구와 수려한 외모에서 풍기는 느긋한 여유는, 사교계를 능숙하게 지휘하는 전략가의 자긍심을 고스란히 드러냅니다. 매혹적인 농담으로 좌중을 매료시키면서도 명확한 단호함으로 철저히 선을 긋는 그에게서는 묘한 지배력이 느껴지곤 합니다. 그 완벽한 무심함이야말로 사교계가 이 매력적인 독신남에게 끊임없이 매료되는 이유입니다.",
+    description: "리딩턴 클럽을 주도하는 셰일포드 공작가의 수장, 애셔 셰일포드입니다. 압도적인 체구와 수려한 외모에서 풍기는 느긋한 여유는, 사교계를 능숙하게 장악하는 존재감을 고스란히 드러냅니다. 매혹적인 농담으로 좌중을 매료시키면서도 명확한 단호함으로 나아가는 그는 같은 남자들에게도 선망의 대상입니다. 그 완벽한 무심함이야말로 사교계가 이 매력적인 독신남에게 끊임없이 매료되는 이유입니다.",
     signpost: "https://i.postimg.cc/sxnZbv5H/pyosmal-0000-geulub-1-bogsa-21.png",
     mainImage: "https://i.postimg.cc/Y9DnkfKX/aesyeo1-bogsa.webp",
     subImages: ["https://i.postimg.cc/Y9DnkfKX/aesyeo1-bogsa.webp", "https://i.postimg.cc/5yHPtYbD/aesyeo2-bogsa.webp", "https://i.postimg.cc/prgs5WdD/aesyeo3-bogsa.webp"]
@@ -157,7 +157,7 @@ export const characterData = [
     name: "콜린 래틀리프",
     family: "울프윅 남작의 발렛",
     shortDesc: "26세, 남성",
-    description: "울프윅 가문을 대대로 모셔온 발렛, 콜린 래틀리프는 새로이 귀족이 된 주인의 곁을 가장 완벽하게 보좌하는 인물입니다. 냉정하고 무심한 분위기에 지적인 까칠함을 지닌 그는, 오직 논리와 효율을 기준으로 모든 업무를 한 치의 오차도 없이 처리해 냅니다. 기계적인 존댓말 뒤에 깃든 신경질적이고도 까다로운 면모는 사교계의 그 어떤 하인들보다 강렬한 존재감을 드러냅니다. 감정을 배제한 그의 예리함은 때로 주인의 야성마저 영리하게 통제하곤 합니다.",
+    description: "울프윅 가문을 대대로 모셔온 발렛, 콜린 래틀리프는 새로이 귀족이 된 주인의 곁을 가장 완벽하게 보좌하는 인물입니다. 냉정하고 무심한 분위기에 지적인 까칠함을 지닌 그는, 오직 논리와 효율을 기준으로 모든 업무를 한 치의 오차도 없이 처리해 냅니다. 귀족적인 존댓말 뒤에 깃든 신경질적이고도 까다로운 면모는 사교계의 그 어떤 하인들보다 강렬한 존재감을 드러냅니다. 감정을 배제한 그의 예리함은 때로 주인의 야성마저 영리하게 통제하곤 합니다.",
     signpost: "https://i.postimg.cc/x8sbBcK9/pyosmal-0004-geulub-1-bogsa-17.png",
     mainImage: "https://i.postimg.cc/NjJ56pXV/kollin1-bogsa.webp",
     subImages: ["https://i.postimg.cc/NjJ56pXV/kollin1-bogsa.webp", "https://i.postimg.cc/YCnh6bg0/kollin2-bogsa.webp", "https://i.postimg.cc/zXNb8L8m/4-bogsa.webp"]
@@ -197,7 +197,7 @@ export const characterData = [
     name: "맥스 로저스톤",
     family: "오크홀 지역 대지주, 로저스톤 가문 가주",
     shortDesc: "30세, 남성",
-    description: "유서 깊은 오크 홀의 대지주이자 풍요로운 포도밭을 소유한 로저스톤 가문의 가주, 맥스 로저스톤입니다. 압도적인 거구와 무뚝뚝한 표정 탓에 사교계에서는 그를 위압적인 인물로 오해하곤 하지만, 실상은 누구보다 조심스럽고 정중한 예법을 지닌 신사입니다. 감정을 표현하는 데 서툴러 주로 말 없는 침묵을 선택할 뿐, 그 과묵함 아래에는 깊은 배려와 억제된 다정함이 숨어 있습니다. 화려한 스캔들 대신 자신의 영지를 묵묵히 일구는 이 소박한 내실이야말로 그의 진짜 매력입니다.",
+    description: "유서 깊은 오크 홀의 대지주이자 풍요로운 포도밭을 소유한 로저스톤 가문의 가주, 맥스 로저스톤입니다. 압도적인 거구와 무뚝뚝한 표정 탓에 사교계에서는 그를 위압적인 인물로 오해하곤 하지만, 실상은 누구보다 조심스럽고 정중한 예법을 지닌 신사입니다. 감정을 표현하는 데 서툴러 주로 말 없는 침묵을 선택할 뿐, 그 과묵함 아래에는 깊은 배려와 평화를 사랑하는 선량함이 숨어 있습니다. 화려한 스캔들 대신 자신의 영지를 묵묵히 일구는 이 소박한 내실이야말로 그의 진짜 매력입니다.",
     signpost: "https://i.postimg.cc/rygWDY73/pyosmal-0015-geulub-1-bogsa-6.png",
     mainImage: "https://i.postimg.cc/Pf2pX37H/maegseu1-bogsa.webp",
     subImages: ["https://i.postimg.cc/Pf2pX37H/maegseu1-bogsa.webp", "https://i.postimg.cc/xjtJfxZV/maegseu2-bogsa.webp", "https://i.postimg.cc/3rn48Sq8/maegseu3-bogsa.webp"]
